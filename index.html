@@ -1,211 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script>
+<link>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>밀리서재</title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/aa.css">
+</link>
+<link rel="stylesheet" type="text/js" href="js/bb.js">
+</link>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #242424;
+    }
 
-    </script>
+    .item {
+        width: 1890px;
+        height: 7000px;
+        /* background-color: rgb(51, 223, 142); */
+    }
 
-    <style>
-        .item {
-            width: 1890px;
-            height: 7000px;
-            background-color: aqua;
+    .item1 {
+        width: 1890px;
+        height: 64px;
+        /* background-color: rgb(248, 1, 1); */
+        display: flex;
+        place-content: flex-end;
+
+    }
+
+    .item1 li {
+        display: inline;
+    }
+
+    .item-text {
+        position: absolute;
+        top: 5px;
+        top: 10px;
+    }
+
+    .item-text:hover {
+        position: absolute;
+    }
+
+    .item-text li {
+        position: absolute;
+    }
+
+    .item1-1 {
+        display: flex;
+        height: 100%;
+        width: 111px;
+        border-bottom: 0.5px solid #dfdfdf;
+        padding: 0 24px;
+        margin: 0px 71% -1px 0px;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0s;
+        transition-delay: .3s;
+    }
+
+    .item1-2 {
+        display: flex;
+        height: 100%;
+        border-bottom: 0.5px solid #dfdfdf;
+        padding: 0 24px;
+        margin: 0px 0 0 -12px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: hsla(0, 0%, 100%, 0);
+        transition: background-color 0s;
+        transition-delay: .3s;
+    }
+
+    .item1-2>a {
+        text-align: center;
+        color: #ffff;
+    }
+
+    .item1-2 li {
+        text-align: center;
+        color: #ffff;
+    }
+
+    .item1-ul2 {
+        width: 111px;
+        height: 100%;
+        /* background-color: rgb(0, 68, 255); */
+    }
+
+    .item1-3 a {
+        padding: 9px 14px;
+        font-size: 16px;
+        color: black;
+        text-decoration: blink;
+    }
+
+    .item1-3 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-right: 24px;
+    }
+
+    .item2 {
+        width: 1892px;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: 100% 56%;
+        background: linear-gradient(#f8faff 69.5%, #f0f4ff 0);
+        padding: 64px 0 0;
+        height: 862px;
+    }
+
+    .item2-1 {
+        position: relative;
+        display: flex;
+        max-width: 1200px;
+        padding: 64px 0 0;
+        margin: 21px -170px 0 145px;
+        height: 662px;
+        background-size: contain;
+        /* background-image: url(img/itemul.png); */
+        animation: fadein 3s;
+        -moz-animation: fadein 3s;
+        -webkit-animation: fadein 3s;
+        -o-animation: fadein 3s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
         }
 
-        .item1 {
-            width: 1890px;
-            height: 64px;
-            background-color: rgb(248, 1, 1);
-            display:flex;
-            
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+
+        /* Firefox */
+        from {
+            opacity: 0;
         }
 
-        .item1 li{display: inline;}
-        .itme1-1 {
-            display: flex;
+        to {
+            opacity: 1;
         }
+    }
 
-        .item1-2 {
-            display: flex;
-            height: 100%;
-            border-bottom: 0.5px solid #dfdfdf;
-            padding: 0 24px;
-            align-items: center;
-            justify-content: space-between;
-            background-color: hsla(0,0%,100%,0);
-            transition: background-color 0s;
-            transition-delay: .3s;
-        }
+    .item1-2button {
+        cursor: pointer;
+        background: #333;
+        border-radius: 100px;
+        font-size: 11px;
+        padding: 7px 9px 7px 10px;
+        line-height: 13px;
+        letter-spacing: 3.4px;
+        color: #fff;
+        text-align: center;
+    }
 
-        .item1-ul {
-            display: flex;
-            height: 100%;
-            border-bottom: 0.5px solid #dfdfdf;
-            padding: 0 24px;
-            align-items: center;
-            justify-content: space-between;
-            background-color: hsla(0, 0%, 100%, 0);
-            transition: background-color 0s;
-            transition-delay: .3s;
-        }
+    .item2 p {
+        text-align: center;
+        margin-top: 88px;
+        padding: 0 48px;
+    }
 
-        .item2 {
-            width: 1890px;
-            background-color: rgb(243 241 241);
-            position: relative;
-            display: block;
-            height: 13%;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-size: 765px;
-            background-repeat: no-repeat;
-            background-position: 96% 55%;
-        }
+    .item_img {
+        color: transparent;
+        text-indent: -9999px;
+        background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e76….png);
+        background-repeat: no-repeat;
+        height: 223px;
+        margin: -61% 0 0px 27%;
+        padding: 0 0 0 0;
+        background-size: 346px;
+    }
 
-        .item2-1 {
-            position: relative;
-            display: block;
-            height: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            background: url(img/itemul.png);
-            background-size: 765px;
-            background-repeat: no-repeat;
-            background-position: 96% 55%;
-        }
+    #item2img {
+        color: transparent;
+        text-indent: -9999px;
+        background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/millielibrary.e908db2….png);
+        background-size: 178px;
+        background-repeat: no-repeat;
+        height: 47px;
+        margin: -13%0 0 -37%;
+    }
 
-        .item2-text {
-            text-align: center;
-            margin-top: 88px;
-            padding: 0 48px;
-        }
+    .item2-img {
+        margin: 9% -1px 0 42%;
+    }
 
-        .item3 {
-            width: 1890px;
+    /* .item3 {
+            width: 100%;
+            background-size: cover;
+            background-position: 0 0;
             height: 1037px;
             background-color: rgb(255, 251, 0);
+        } */
+
+    .item3 h1 {
+        font-size: 50px;
+    }
+
+    #item3 {
+        width: 100%;
+        height: 1100px;
+        padding: 144px 0px 80px 0px;
+    }
+
+    #item3 h2 {
+        font-size: 49px;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+        line-height: 130%;
+    }
+
+    #item3 p {
+        font-size: 22px;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+        color: #555;
+        letter-spacing: -0.5px;
+        line-height: 150%;
+    }
+
+    .slide1 {
+        height: 220px;
+        background-image: url(img/item3-1.png);
+        background-repeat: repeat-x;
+        background-size: 3000px;
+        -webkit-animation-name: slide_left;
+        animation-name: slide_left;
+        -webkit-animation-duration: 100s;
+        animation-duration: 100s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        margin-top: 50px;
+    }
+
+    .slide2 {
+        height: 220px;
+        background-image: url(img/item3-2.png);
+        background-repeat: repeat-x;
+        background-size: 3000px;
+        -webkit-animation-name: slide_right;
+        animation-name: slide_right;
+        -webkit-animation-duration: 100s;
+        animation-duration: 100s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        margin-top: -15px;
+    }
+
+    .slide3 {
+        height: 220px;
+        background-image: url(img/item3-3.png);
+        background-repeat: repeat-x;
+        background-size: 3000px;
+        -webkit-animation-name: slide_left;
+        animation-name: slide_left;
+        -webkit-animation-duration: 100s;
+        animation-duration: 100s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        margin-top: -15px;
+    }
+
+    @-webkit-keyframes slide_left {
+        from {
+            background-position: 0px;
         }
 
-        .item4 {
-            width: 1890px;
-            height: 2216px;
-            background-color: rgb(0, 255, 64);
+        to {
+            background-position: -3000px;
+        }
+    }
+
+    @keyframes slide_left {
+        from {
+            background-position: 0px;
         }
 
-        .item5 {
-            width: 1890px;
-            height: 688px;
-            background-color: rgb(0, 68, 255);
+        to {
+            background-position: -3000px;
+        }
+    }
+
+    @-webkit-keyframes slide_right {
+        from {
+            background-position: -3000px;
         }
 
-        .item6 {
-            width: 1890px;
-            height: 843px;
-            background-color: rgb(7, 10, 145);
+        to {
+            background-position: 0px;
+        }
+    }
+
+    @keyframes slide_right {
+        from {
+            background-position: -3000px;
         }
 
-        .item7 {
-            width: 1890px;
-            height: 768px;
-            background-color: #ffeb60
+        to {
+            background-position: 0px;
         }
+    }
 
-        .item8 {
-            width: 1890px;
-            height: 933px;
-            background-color: rgb(247, 89, 128);
-        }
-        .itme8-1{
-            width: 1890px; height:105px; ;
-        }
-        .item9 {
-            width: 1890px;
-            height: 655px;
-            background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/review-bg.7113d143354a257d6ddad264072b913e.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50%;
-        }
-                
+    .item3 p {
+        font-size: 23px;
+    }
 
-        .item10 {
-            width: 1890px;
-            height: 567px;
-            background-color: rgb(89, 110, 13);
-        }
+    .item5 {
+        width: 1890px;
+        height: 688px;
+        background-color: rgb(0, 68, 255);
+    }
 
-        .foorem {
-            width: 1890px;
-            height: 244px;
-            background-color: rgb(125, 158, 230);
-        }
-    </style>
+    .item6 {
+        width: 1890px;
+        height: 843px;
+        background-color: rgb(7, 10, 145);
+    }
+
+    .item6-text {
+        text-align: center;
+        -webkit-animation: fadeIn-data-v-003e81a0 2s forwards;
+        animation: fadeIn-data-v-003e81a0 2s forwards;
+    }
+
+    .item7 {
+        width: 1890px;
+        height: 768px;
+        background-color: #ffeb60
+    }
+
+    .item8 {
+        width: 1890px;
+        height: 933px;
+        background-color: rgb(247, 89, 128);
+    }
+
+    .itme8-1 {
+        width: 1890px;
+        height: 105px;
+        ;
+    }
+
+    .item9 {
+        width: 1890px;
+        height: 655px;
+        background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/review-bg.7113d143354a257d6ddad264072b913e.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+
+    .item10 {
+        width: 1890px;
+        height: 567px;
+        background-color: rgb(89, 110, 13);
+    }
+
+    .foorem {
+        width: 1890px;
+        height: 244px;
+        background-color: rgb(125, 158, 230);
+        display: flex;
+    }
+
+    .foorem-img {
+        display: flex;
+    }
+
+    .foorem-text {
+        font-size: 15px;
+    }
+
+    section {
+        width: 100%;
+        height: 2300px;
+        padding-top: 80px;
+    }
+
+    section h2 {
+        font-size: 49px;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+        line-height: 130%;
+    }
+
+    section p {
+        font-size: 22px;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+        color: #555;
+        letter-spacing: -0.5px;
+        line-height: 150%;
+    }
+
+    section .list1,
+    section .list2,
+    section .list3,
+    section .list4 {
+        margin-top: 80px;
+    }
+
+    section .list1 h3,
+    section .list2 h3,
+    section .list3 h3,
+    section .list4 h3 {
+        width: 1130px;
+        margin: 0 auto;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    section .list1 ul,
+    section .list2 ul,
+    section .list3 ul,
+    section .list4 ul {
+        width: 1150px;
+        height: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        padding-top: 16px;
+    }
+
+    section .list1 .box1,
+    section .list1 .box2,
+    section .list1 .box3,
+    section .list1 .box4,
+    section .list2 .box1,
+    section .list2 .box2,
+    section .list2 .box3,
+    section .list2 .box4,
+    section .list3 .box1,
+    section .list3 .box2,
+    section .list3 .box3,
+    section .list3 .box4,
+    section .list4 .box1,
+    section .list4 .box2,
+    section .list4 .box3,
+    section .list4 .box4 {
+        width: 145px;
+        position: relative;
+    }
+
+    section .list1 .box1 h4,
+    section .list1 .box2 h4,
+    section .list1 .box3 h4,
+    section .list1 .box4 h4,
+    section .list2 .box1 h4,
+    section .list2 .box2 h4,
+    section .list2 .box3 h4,
+    section .list2 .box4 h4,
+    section .list3 .box1 h4,
+    section .list3 .box2 h4,
+    section .list3 .box3 h4,
+    section .list3 .box4 h4,
+    section .list4 .box1 h4,
+    section .list4 .box2 h4,
+    section .list4 .box3 h4,
+    section .list4 .box4 h4 {
+        font-family: "Noto Sans KR", sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    section .list1 .box1 h5,
+    section .list1 .box2 h5,
+    section .list1 .box3 h5,
+    section .list1 .box4 h5,
+    section .list2 .box1 h5,
+    section .list2 .box2 h5,
+    section .list2 .box3 h5,
+    section .list2 .box4 h5,
+    section .list3 .box1 h5,
+    section .list3 .box2 h5,
+    section .list3 .box3 h5,
+    section .list3 .box4 h5,
+    section .list4 .box1 h5,
+    section .list4 .box2 h5,
+    section .list4 .box3 h5,
+    section .list4 .box4 h5 {
+        font-family: "Noto Sans KR", sans-serif;
+        color: #6f6f6f;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    section .list1 .box1>img,
+    section .list1 .box2>img,
+    section .list1 .box3>img,
+    section .list1 .box4>img,
+    section .list2 .box1>img,
+    section .list2 .box2>img,
+    section .list2 .box3>img,
+    section .list2 .box4>img,
+    section .list3 .box1>img,
+    section .list3 .box2>img,
+    section .list3 .box3>img,
+    section .list3 .box4>img,
+    section .list4 .box1>img,
+    section .list4 .box2>img,
+    section .list4 .box3>img,
+    section .list4 .box4>img {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    section .list1 .box1 .badge img,
+    section .list1 .box2 .badge img,
+    section .list1 .box3 .badge img,
+    section .list1 .box4 .badge img,
+    section .list2 .box1 .badge img,
+    section .list2 .box2 .badge img,
+    section .list2 .box3 .badge img,
+    section .list2 .box4 .badge img,
+    section .list3 .box1 .badge img,
+    section .list3 .box2 .badge img,
+    section .list3 .box3 .badge img,
+    section .list3 .box4 .badge img,
+    section .list4 .box1 .badge img,
+    section .list4 .box2 .badge img,
+    section .list4 .box3 .badge img,
+    section .list4 .box4 .badge img {
+        width: 40px;
+        height: 34px;
+        position: absolute;
+        top: 0;
+        right: -7px;
+    }
+
+    section .list1 .box1 .badge img:nth-of-type(2),
+    section .list1 .box2 .badge img:nth-of-type(2),
+    section .list1 .box3 .badge img:nth-of-type(2),
+    section .list1 .box4 .badge img:nth-of-type(2),
+    section .list2 .box1 .badge img:nth-of-type(2),
+    section .list2 .box2 .badge img:nth-of-type(2),
+    section .list2 .box3 .badge img:nth-of-type(2),
+    section .list2 .box4 .badge img:nth-of-type(2),
+    section .list3 .box1 .badge img:nth-of-type(2),
+    section .list3 .box2 .badge img:nth-of-type(2),
+    section .list3 .box3 .badge img:nth-of-type(2),
+    section .list3 .box4 .badge img:nth-of-type(2),
+    section .list4 .box1 .badge img:nth-of-type(2),
+    section .list4 .box2 .badge img:nth-of-type(2),
+    section .list4 .box3 .badge img:nth-of-type(2),
+    section .list4 .box4 .badge img:nth-of-type(2) {
+        width: 40px;
+        height: 34px;
+        position: absolute;
+        top: 25px;
+        right: -7px;
+    }
+
+    #item6 .item6-1 {
+        width: 900px;
+        height: 500px;
+        background-image: url(img/item6-6.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        position: relative;
+        top: 52.5px;
+    }
+</style>
 
 </head>
 
 <body>
     <div class="item">
         <div class="item1">
-            <div class="item1-1"><img src="img/item1.png" style="width: 5%; height:5%" alt=""></div>
+
+            <div class="item1-1">
+                <ul class="item1-ul">
+                    <img src="img/item1.png" style="width: 100%; height: 60%" alt="">
+                </ul>
+            </div>
 
             <div class="item1-2">
-                <ul class="item1-ul">
-                    <li><a href="#">기업문의</a></li>
-                    <li><a href="#">계정관리</a></li>
-
-                    <li><button class="#">로그인</button></li>
+                <ul class="item1-3">
+                    <li class="item1-ul2"><a href="#">기업문의</a></li>
+                    <li class="item1-ul2"><a href="#">계정관리</a></li>
                 </ul>
+
+                <button class="item1-2button">로그인</button>
+
             </div>
         </div>
 
         <div class="item2">
+            <img src="img/itemul.png" class="item2-img" height="70%" alt="">
             <div class="item2-1">
-                <h1 class="item-text">
-                    당신의 일상을
-                    1미리+ 독서와 무제한 친해지리
-                </h1>
 
-                <!-- <img src="img/itemul.png" style="width: 40%; height:100%"> -->
-                <p><img src="img/item2.png" style="width: 4%;">밀리의 서재</p>
+                <img src="img/h1.png" class="item_img" height="200" alt="">
+                <img src="img/h2.png" id="item2img" height="50">
             </div>
         </div>
 
-        <div class="item3">
-            <h1>당신을 기다리는 11만권의 도서</h1>
-            <p>첫 달 무료 구독을 통해 어떤 도서가 있는지 확인해보세요</p>
-            <img src="img/item3-1.png" style="width: 100%; height: 10%;" alt="">
-            <img src="img/item3-2.png" style="width: 100%; height: 10%;" alt="">
-            <img src="img/item3-3.png" style="width: 100%; height: 10%;" alt="">
+        <div id="item3">
+
+            <h2>당신을 기다리는 <br> 11만권의 도서</h2>
+            <p>첫 달 무료 구독을 통해 <br> 어떤 도서가 있는지 확인해보세요</p>
+
+            <div class="slide1"></div>
+            <div class="slide2"></div>
+            <div class="slide3"></div>
+
         </div>
 
         <div class="item4">
+            <section>
+                <h2>싹 다 무제한 <br> 9,900원</h2>
+                <p>10년치 베스트셀러 <br> 신간 오디오북 장르 소설까지</p>
+                <div class="item4-1">
+                    <h3>지금 서점 베스트 셀러</h3>
+                    <ul>
+                        <li class="box1"></li>
+                        <li class="box1"></li>
+                        <li class="box1"></li>
+                        <li class="box1"></li>
+                        <li class="box1"></li>
+                        <li class="box1"></li>
+                        <li class="box1"></li>
+                    </ul>
+                </div>
 
-            <h1>싹 다 무제한 9900원</h1>
+                <div class="item4-2">
+                    <h3>한 달 이내 출간된 책</h3>
+                    <ul>
+                        <li class="box2"></li>
+                        <li class="box2"></li>
+                        <li class="box2"></li>
+                        <li class="box2"></li>
+                        <li class="box2"></li>
+                        <li class="box2"></li>
+                        <li class="box2"></li>
+                    </ul>
+                </div>
 
-            <div class="item4book">
-                <strong>지금 서점 베스트 셀러</strong>
-            </div>
+                <div class="item4-3">
+                    <h3>오디오북 BEST</h3>
+                    <ul>
+                </div>
 
-            <p>10년치 베스트셀러 신간 오디오북 장르 소설까지</p>
-
-            <div class="item4book">
-                <strong>한 달 이내 출간된 책</strong>
-            </div>
-
-            <div class="item4book">
-                <strong>오디오북 BEST</strong>
-            </div>
-
-            <div class="item4book">
-                <strong>밀리 독점 오리지널 로맨스</strong>
-            </div>
-
+                <div class="item4-4">
+                    <h3>밀리 독점 오리지널 로맨스</h3>
+                    <ul>
+                        <li class="box4"></li>
+                        <li class="box4"></li>
+                        <li class="box4"></li>
+                        <li class="box4"></li>
+                        <li class="box4"></li>
+                        <li class="box4"></li>
+                        <li class="box4"></li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
         <div class="item5">
@@ -220,10 +707,23 @@
             </ul>
         </div>
 
-        <div class="item6">
-            <h1>당신이 끝까지 읽을 책을 알려주는 완독지수</h1>
-            <p>350만 밀리 회원이 먼저 읽고 다 읽을 확률과 예상 시간을 알려드려요</p>
+        <div id="item6">
+            <h2>당신이 끝까지 읽을 책을 <br> 알려주는 완독지수</h2>
+            <p>350만 밀리 회원이 먼저 읽고 <br> 다 읽을 확률과 예상 시간을 알려드려요</p>
+
+            <div class="item6-1">
+                <div class="item6-2">
+                    <img src="img/item6-1.png" alt="">
+                    <img src="img/item6-2.png" alt="">
+                    <img src="img/item6-3.png" alt="">
+                    <img src="img/item6-4.png" alt="">
+                </div>
+                <div class="item6-3">
+                    <img src="img/item6-5.png" alt="">
+                </div>
+            </div>
         </div>
+
 
         <div class="item7">
             <h1>언제든 해지 가능! 첫 달 무료로 가볍게</h1>
@@ -238,114 +738,75 @@
             </ul>
         </div>
 
-        <div class="item9">
-            <img src="img/item9-1.png">
-            <h1>내돈내산 구독이야기</h1>
-            <p>패션 브랜드 대표부터 고등학교 교사까지!</p>
+        <div id="item9">
+            <div class="item9-1">
+                <iframe width="415" height="415" src="https://www.youtube.com/embed/c-XG8k_w1LM" title="Millie Review"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <div class="text_box">
+                    <h2>내돈내산 <br> 밀리 구독 이야기</h2>
+                    <p>패션 브랜드 대표부터 <br> 고등학교 교사까지!</p>
+                </div>
+            </div>
         </div>
 
-        <div class="item10">
-            <h1>자주 묻는 질문</h1>
-            <ul>
-                <li>
-                    <div>
-                        <p>안쓰면 정말 환불해 주나요?</p>
-                    </div>
-                    <div>
-                        <p>
-                            물론입니다. 결제 후 콘텐츠 다운로드 및 열람을 하지 않으셨다면 전액 환불해 드리고 있어요.
-                            <b>[밀리 > 관리  > 구독관리 > 결제 내역 확인]</b>
-                            에서 직접 환불이 가능하며,
-                            <br>
-                            해결이 어려운 경우 고객센터로 문의해 주세요.
-                        </p>
-                    </div>
-                </li>
 
-                <li>
-                    <div>
-                        <p>구독 중 해지 할수있나요?수수료는 없나요?</p>
-                    </div>
-                    <div>
-                        <p>
-                            다음달 부터 결제되지 않도록 수수료 없이 언제든지 해지하실 수 있습니다.
-                            <b>[밀리 > 관리 > 구독관리 > 자동결제 해지]</b>
-                            메뉴를 통해 기간에 상관없이 직접 가능해요.
-                        </p>
-                    </div>
-                </li>
 
-                <li>
-                    <div>
-                        <p>무료 혜택은 누구나 받을 수 있나요?</p>
-                    </div>
-                    <div>
-                        <p>
-                            네, 밀리 회원이라면 누구나 첫 정기구독 신청 시 1회 제공됩니다.
-                            첫 달 무료 또는 첫 주 무료 중 선택이 가능하며 무료 기간에 따라 가격이 달라집니다.
-                            종이책+전자책 정기구독의 경우 첫 주 무료 혜택만 제공됩니다.
-                            아직 신청하지 않으셨다면 바로 구독신청으로 혜택을 받아 보세요.
-                        </p>
-                    </div>
-                </li>
 
-                <li>
-                    <div>
-                        <p>어떤 기기에서 사용할 수 있나요?</p>
-                    </div>
-                    <div>
-                        <p>
-                            아래 기기와 버전에서 밀리를 사용할 수 있습니다.
-
-                            - 휴대폰 / 태블릿 : iOS13, Android 6 이상 지원
-                            - PC : Mac Yosemite, Window 10 이상 지원
-                            - E ink : Android 4.4 이상 지원
-                            (크레마 그랑데, 크레마 카르타G, 이노스페이스원 공식 판매 기기, 교보 Sam 7.8 등)
-                        </p>
-                    </div>
-                </li>
-            </ul>
+        <div id="item10">
+            <h2>자주 묻는 질문</h2>
         </div>
 
-        <div class="foorem">
-            <h1>(주)밀리의 서재</h1>
-            <ul>
-                <li><img src="img/foorem1.png"></li>
-                <li><img src="img/foorem2.png"></li>
-                <li><img src="img/foorem3.png"></li>
-                <li><img src="img/foorem4.png"></li>
-                <li><img src="img/foorem5.png"></li>
-            </ul>
-            <button>사업자 정보 펼쳐보기</button>
-            <ul>
-                <li><a href="#">이용약관 ></a></li>
-                <li><a href="#">개인정보처리방침 ></a></li>
-                <li><a href="#">청소년보호정책 ></a></li>
-                <li><a href="#">고객센터 ></a></li>
-                <li><a href="#">B2B문의 ></a></li>
-                <li><a href="#">콘텐츠 제휴문의 ></a></li>
-                <li><a href="#">뷰어다운로드 ></a></li>
-                <li><a href="#">회사 소개 ></a></li>
-            </ul>
+
+
+
+
+        <footer>
+            <div class="footer_head">
+                <span>(주) 밀리의 서재</span>
+                <div class="sns">
+                    <img src="img/foorem1.png" alt="youtube">
+                    <img src="img/foorem2.png" alt="instagram">
+                    <img src="img/foorem3.png" alt="facebook">
+                    <img src="img/foorem4.png" alt="kakaotalk">
+                    <img src="img/foorem5.png" alt="naver">
+                </div>
+            </div>
+            <div class="footer_info">
+                <button type="button">사업자 정보 닫기</button>
+                <ul>
+                    <li>대표이사 : 서영택</li>
+                    <li>사업자등록번호 : 423-88-00370</li>
+                    <li>호스팅 제공자 : (주)밀리의 서재</li>
+                </ul>
+                <ul style="margin-bottom: 10px;">
+                    <li>통신판매업 신고번호 : 2016-서울마포-2012호</li>
+                    <li>주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</li>
+                </ul>
+                <ul style="margin-bottom: 20px;">
+                    <li>고객정보보호 책임자 : 김주영(jay@millie.town)</li>
+                    <li>마케팅 제휴 문의 : business@millie.town</li>
+                </ul>
+            </div>
+            <div class="footer_service">
+                <ul>
+                    <li><a href="#">이용약관 ></a></li>
+                    <li><a href="#"><b>개인정보처리방침 ></b></a></li>
+                    <li><a href="#">청소년보호정책 ></a></li>
+                    <li><a href="#">고객센터 ></a></li>
+                    <li><a href="#">B2B 문의 ></a></li>
+                    <li><a href="#">콘텐츠 제휴문의 ></a></li>
+                    <li><a href="#">뷰어 다운로드 ></a></li>
+                    <li><a href="#">회사 소개 ></a></li>
+                </ul>
+                <p>Copyright © 2022 밀리의 서재 All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <div id="free_btn">
+            <button type="button"><b>첫 달 무료</b>로 독서 시작하기</button>
         </div>
-    </div>
-
-    <script>
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: { query: "자바스크립트", size: 50 },
-            headers: { Authorization: "KakaoAK bd0657efca6e474c953ac7a43b6a08df" }
-        })
-
-
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: { query: "정원", size: 50 },
-            headers: { Authorization: "KakaoAK bd0657efca6e474c953ac7a43b6a08df" }
-        })
-    </script>
 </body>
 
 </html>
