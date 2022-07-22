@@ -7,7 +7,12 @@
         letter-spacing: -0.5px;
     }
 
-    .btn_on {
+    .btn_on{
+        background-color: #242424;
+        color: #fff;
+    }
+
+    .button{
         background-color: #242424;
         color: #fff;
     }
@@ -222,10 +227,11 @@
     #item3 h2 {
         font-size: 49px;
         text-align: center;
-        font-family: "Noto Sans KR", sans-serif;
         margin-bottom: 24px;
-        letter-spacing: -0.5px;
         line-height: 130%;
+        transform: translateY(80px);
+        transition: all 2s;
+        opacity: 0;
     }
 
     #item3 p {
@@ -553,9 +559,9 @@
 
     #item5 .item5-1 button {
         padding: 4px 16px;
-        background-color: #fff;
+        /* background-color: #fff; */
         border-radius: 100px;
-        border: 1px solid #242424;
+        /* border: 1px solid #242424; */
         font-size: 14px;
         margin-left: 12px;
         cursor: pointer;
@@ -868,9 +874,9 @@
 
     #item8 .item8-2 button {
         padding: 2px 18px;
-        background-color: #f7f7f7;
+        /* background-color: #f7f7f7; */
         border-radius: 100px;
-        border: 1px solid #242424;
+        /* border: 1px solid #242424; */
         font-size: 14px;
         margin-top: 25px;
         margin-right: 5px;

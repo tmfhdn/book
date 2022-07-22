@@ -339,3 +339,17 @@ document.querySelector('.cw_3 .screen_btn3').addEventListener('click', function 
     document.querySelector('.cw_3 .item8-5-1').style.transform = 'translate(-660px)';
     document.querySelector('.cw_3 .ment').innerHTML = "<b>책-잇</b> <br> 책을 통해 트렌드와 문해력을 한번에!";
 })
+
+$(window).scroll(function () {
+
+    var scroll_section = $('section').offset().top;
+    if (ws > scroll_section - 700) {
+    $('section h2, section p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_category = $('#item4').offset().top;
+    if (ws > scroll_category - 700) {
+    $('#item4 h2, #item4 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+});
