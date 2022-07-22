@@ -19,13 +19,13 @@
     }
 
     .item {
-        width: 1890px;
+        width: 100%;
         height: 7000px;
         /* background-color: rgb(51, 223, 142); */
     }
 
     .item1 {
-        width: 1890px;
+        width: 100%;
         height: 64px;
         /* background-color: rgb(248, 1, 1); */
         display: flex;
@@ -605,6 +605,122 @@
         background-image: url(img/item9-2.png);
         position: relative;
     }
+
+    #item5 {
+    width: 100%;
+    height: 700px;
+}
+
+#item5 h2 {
+    font-size: 49px;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 130%;
+}
+
+#item5 p {
+    font-size: 22px;
+    text-align: center;
+    color: #555;
+    line-height: 150%;
+}
+
+#item5 .item5-1 {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    position: relative;
+}
+
+#item5 .item5-1 button {
+    padding: 4px 16px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 1px solid #242424;
+    font-size: 14px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+#item5 .item5-1 ul {
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 16px;
+    position: absolute;
+}
+
+#item5 .item5-1 .item5-2 {
+    width: 145px;
+}
+
+#item5 .item5-1 .item5-2 h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#item5 .item5-1 .item5-2 h5 {
+    color: #6f6f6f;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#item5 .item5-1 .item5-2 img {
+    width: 100%;
+}
+
+#item5 .item5-1 .item5-3,
+#item5 .item5-1 .item5-3,
+#item5 .item5-1 .item5-5,
+#item5 .item5-1 .item5-6 {
+    display: none;
+    width: 145px;
+}
+
+#item5 .item5-1 .item5-3 h4,
+#item5 .item5-1 .item5-4 h4,
+#item5 .item5-1 .item5-5 h4,
+#item5 .item5-1 .item5-6 h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#item5 .item5-1 .item5-3 h5,
+#item5 .item5-1 .item5-4 h5,
+#item5 .item5-1 .item5-5 h5,
+#item5 .item5-1 .item5-6 h5 {
+    color: #6f6f6f;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#item5 .item5-1 .item5-3 img,
+#item5 .item5-1 .item5-4 img,
+#item5 .item5-1 .item5-5 img,
+#item5 .item5-1 .item5-6 img {
+    width: 100%;
+}
 </style>
 
 </head>
@@ -641,8 +757,8 @@
 
         <div id="item3">
 
-            <h2>당신을 기다리는 <br> 11만권의 도서</h2>
-            <p>첫 달 무료 구독을 통해 <br> 어떤 도서가 있는지 확인해보세요</p>
+            <h2 id="item3-text1">당신을 기다리는 <br> 11만권의 도서</h2>
+            <p id="item3-text2">첫 달 무료 구독을 통해 <br> 어떤 도서가 있는지 확인해보세요</p>
 
             <div class="slide1"></div>
             <div class="slide2"></div>
@@ -751,66 +867,66 @@
         </div>
 
 
-            <div id="item5">
-                <h2>관심 분야에 있는 책도 <br> 딱 골라드려요</h2>
-                <p>검색어 순위를 통해 뽑은 <br> 인기 분야 책들을 확인해보세요</p>
-                <div class="item5-1">
-                    <button type="button" class="btn_on">주식</button>
-                    <button type="button">영어</button>
-                    <button type="button">고전</button>
-                    <button type="button">인테리어</button>
-                    <button type="button">다이어트</button>
-                    <ul>
-                        <li class="item5-2"></li>
-                        <li class="item5-2"></li>
-                        <li class="item5-2"></li>
-                        <li class="item5-2"></li>
-                        <li class="item5-2"></li>
-                        <li class="item5-2"></li>
-                        <li class="item5-2"></li>
-                    </ul>
-            
-                    <ul>
-                        <li class="item5-3"></li>
-                        <li class="item5-3"></li>
-                        <li class="item5-3"></li>
-                        <li class="item5-3"></li>
-                        <li class="item5-3"></li>
-                        <li class="item5-3"></li>
-                        <li class="item5-3"></li>
-                    </ul>
-            
-                    <ul>
-                        <li class="item5-4"></li>
-                        <li class="item5-4"></li>
-                        <li class="item5-4"></li>
-                        <li class="item5-4"></li>
-                        <li class="item5-4"></li>
-                        <li class="item5-4"></li>
-                        <li class="item5-4"></li>
-                    </ul>
-            
-                    <ul>
-                        <li class="item5-5"></li>
-                        <li class="item5-5"></li>
-                        <li class="item5-5"></li>
-                        <li class="item5-5"></li>
-                        <li class="item5-5"></li>
-                        <li class="item5-5"></li>
-                        <li class="item5-5"></li>
-                    </ul>
-            
-                    <ul>
-                        <li class="item5-6"></li>
-                        <li class="item5-6"></li>
-                        <li class="item5-6"></li>
-                        <li class="item5-6"></li>
-                        <li class="item5-6"></li>
-                        <li class="item5-6"></li>
-                        <li class="item5-6"></li>
-                    </ul>
-                </div>
+        <div id="item5">
+            <h2>관심 분야에 있는 책도 <br> 딱 골라드려요</h2>
+            <p>검색어 순위를 통해 뽑은 <br> 인기 분야 책들을 확인해보세요</p>
+            <div class="item5-1">
+                <button type="button" class="btn_on">주식</button>
+                <button type="button">영어</button>
+                <button type="button">고전</button>
+                <button type="button">인테리어</button>
+                <button type="button">다이어트</button>
+                <ul>
+                    <li class="item5-2"></li>
+                    <li class="item5-2"></li>
+                    <li class="item5-2"></li>
+                    <li class="item5-2"></li>
+                    <li class="item5-2"></li>
+                    <li class="item5-2"></li>
+                    <li class="item5-2"></li>
+                </ul>
+    
+                <ul>
+                    <li class="item5-3"></li>
+                    <li class="item5-3"></li>
+                    <li class="item5-3"></li>
+                    <li class="item5-3"></li>
+                    <li class="item5-3"></li>
+                    <li class="item5-3"></li>
+                    <li class="item5-3"></li>
+                </ul>
+    
+                <ul>
+                    <li class="item5-4"></li>
+                    <li class="item5-4"></li>
+                    <li class="item5-4"></li>
+                    <li class="item5-4"></li>
+                    <li class="item5-4"></li>
+                    <li class="item5-4"></li>
+                    <li class="item5-4"></li>
+                </ul>
+    
+                <ul>
+                    <li class="item5-5"></li>
+                    <li class="item5-5"></li>
+                    <li class="item5-5"></li>
+                    <li class="item5-5"></li>
+                    <li class="item5-5"></li>
+                    <li class="item5-5"></li>
+                    <li class="item5-5"></li>
+                </ul>
+    
+                <ul>
+                    <li class="item5-6"></li>
+                    <li class="item5-6"></li>
+                    <li class="item5-6"></li>
+                    <li class="item5-6"></li>
+                    <li class="item5-6"></li>
+                    <li class="item5-6"></li>
+                    <li class="item5-6"></li>
+                </ul>
             </div>
+        </div>
 
 
         <div id="item6">
@@ -887,7 +1003,7 @@
 
         <div class="item8-1">
             <ul>
-                <li class="item8-1-1">
+                <li class="item8-1-1 tap_on">
                     <img src="img/item8-1.png" alt="">
                     <div>오디오북</div>
                 </li>
@@ -923,14 +1039,14 @@
                                 <img src="img/item8-6.png" alt="">
                             </div>
                             <div class="phone_screen2 s_s">
-                                <video src="img/index/audiobook02.mp4" autoplay="autoplay" preload="auto" muted="muted"
+                                <video src="img/item8-7.mp4" autoplay="autoplay" preload="auto" muted="muted"
                                     loop="loop" style="width: 330px;"></video>
                             </div>
                             <div class="phone_screen3 s_s">
-                                <img src="img/index/audiobook03.png" alt="">
+                                <img src="img/item8-8.png" alt="">
                             </div>
                             <div class="phone_screen4 s_s">
-                                <img src="img/index/audiobook04.png" alt="">
+                                <img src="img/item8-9.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -938,7 +1054,7 @@
 
                 <div class="item8-2 cw_2">
                     <div class="item8-2-1">
-                        <img src="img/index/viewer-icon.png" alt="-icon">
+                        <img src="img/item8-4.png" alt="-icon">
                         <h2>밀리뷰어</h2>
                         <p>독서를 위한 가장 <br> 완벽한 도구</p>
                         <p class="ment"><b>시선 추적 기능</b> <br> 눈동자로 페이지를 넘길 수 있어요</p>
@@ -947,23 +1063,23 @@
                         <button type="button" class="screen_btn3">3</button>
                         <button type="button" class="screen_btn4">4</button>
                     </div>
-                    <div class="item8-2-2"><img src="img/index/contents_phone.png" alt=""></div>
+                    <div class="item8-2-2"><img src="img/item8-5.png" alt=""></div>
 
                     <div class="item8-5">
                         <div class="item8-5-1">
                             <div class="phone_screen1 s_s">
-                                <video src="img/index/viewer01.mp4" autoplay="autoplay" preload="auto" muted="muted"
+                                <video src="img/item8-10.mp4" autoplay="autoplay" preload="auto" muted="muted"
                                     loop="loop" style="width: 330px;"></video>
                             </div>
                             <div class="phone_screen2 s_s">
-                                <img src="img/index/viewer02.png" alt="">
+                                <img src="img/item8-11.png" alt="">
                             </div>
                             <div class="phone_screen3 s_s">
-                                <video src="img/index/viewer03.mp4" autoplay="autoplay" preload="auto" muted="muted"
+                                <video src="img/item8-12.mp4" autoplay="autoplay" preload="auto" muted="muted"
                                     loop="loop" style="width: 330px;"></video>
                             </div>
                             <div class="phone_screen4 s_s">
-                                <video src="img/index/viewer04.mp4" autoplay="autoplay" preload="auto" muted="muted"
+                                <video src="img/item8-13.mp4" autoplay="autoplay" preload="auto" muted="muted"
                                     loop="loop" style="width: 330px;"></video>
                             </div>
                         </div>
@@ -972,7 +1088,7 @@
 
                 <div class="item8-2 cw_3">
                     <div class="item8-2-1">
-                        <img src="img/index/today-icon.png" alt="">
+                        <img src="img/item8-4.png" alt="">
                         <h2>투데이</h2>
                         <p>쓱 - 훑어만 봐도 <br> 독서 트렌드를 한 눈에</p>
                         <p class="ment"><b>당신을 위한 추천</b> <br> 키워드로 한 눈에 정리한 추천 도서</p>
@@ -980,18 +1096,18 @@
                         <button type="button" class="screen_btn2">2</button>
                         <button type="button" class="screen_btn3">3</button>
                     </div>
-                    <div class="item8-2-2"><img src="img/index/contents_phone.png" alt=""></div>
+                    <div class="item8-2-2"><img src="img/item8-5.png" alt=""></div>
 
                     <div class="item8-5">
                         <div class="item8-5-1">
                             <div class="phone_screen1 s_s">
-                                <img src="img/index/today01.png" alt="">
+                                <img src="img/item8-15.png" alt="">
                             </div>
                             <div class="phone_screen2 s_s">
-                                <img src="img/index/today02.png" alt="">
+                                <img src="img/item8-16.png" alt="">
                             </div>
                             <div class="phone_screen3 s_s">
-                                <img src="img/index/today03.png" alt="">
+                                <img src="img/item8-17.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1109,6 +1225,7 @@
             <button type="button"><b>첫 달 무료</b>로 독서 시작하기</button>
         </div>
     <script src="js/bb.js"></script>
+    <script></script>
 </body>
 
 </html>
