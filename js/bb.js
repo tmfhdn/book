@@ -341,15 +341,42 @@ document.querySelector('.cw_3 .screen_btn3').addEventListener('click', function 
 })
 
 $(window).scroll(function () {
+    
+    $("#item3 h2, #item3 p").css("transform", "translateY(0px)").css("opacity", "1");
+    $("section h2, #section p").css("transform", "translateY(0px)").css("opacity", "1");
+    $("#item5 h2, #item5 p").css("transform", "translateY(0px)").css("opacity", "1");
+    $("#item6 h2, #item6 p").css("transform", "translateY(0px)").css("opacity", "1");
+    $("#item7 h2, #item7 p").css("transform", "translateY(0px)").css("opacity", "1");
+    $("#item8 h2, #item8 p").css("transform", "translateY(0px)").css("opacity", "1");
+    $("#item9 h2, #item9 p").css("transform", "translateY(0px)").css("opacity", "1");
 
-    var scroll_section = $('section').offset().top;
+    var scroll_section = $("section").offset().top;
     if (ws > scroll_section - 700) {
-    $('section h2, section p').css("transform", "translateY(0px)").css("opacity", "1");
+        $("section h2, section p").css("transform", "translateY(0px)").css("opacity", "1");
     }
 
-    var scroll_category = $('#item4').offset().top;
+    var scroll_category = $('#item5').offset().top;
     if (ws > scroll_category - 700) {
-    $('#item4 h2, #item4 p').css("transform", "translateY(0px)").css("opacity", "1");
+        $('#item5 h2, #item5 p').css("transform", "translateY(0px)").css("opacity", "1");
     }
 
+    var scroll_reading = $('#item6').offset().top;
+    if (ws > scroll_reading - 700) {
+        $('#item6 h2, #item6 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_subscribing = $('#item7').offset().top;
+    if (ws > scroll_subscribing - 700) {
+        $('#item7 h2, #item7 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_contents = $('#item8').offset().top;
+    if (ws > scroll_contents - 700) {
+        $('#item8 h2, #item8 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_review = $('#item9').offset().top;
+    if (ws > scroll_review - 700) {
+        $('#item9 h2, #item9 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
 });
