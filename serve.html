@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스트 셀러</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/1.css">
+    <script></script>
+
+    
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #242424;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .item {
+            width: 100%;
+            height: 7000px;
+            /* background-color: rgb(51, 223, 142); */
+        }
+
+        .item1 {
+            width: 100%;
+            height: 64px;
+            /* background-color: rgb(248, 1, 1); */
+            display: flex;
+            place-content: flex-end;
+
+        }
+
+        .item1 li {
+            display: inline;
+        }
+
+        .item-text {
+            position: absolute;
+            top: 5px;
+            top: 10px;
+        }
+
+        .item-text:hover {
+            position: absolute;
+        }
+
+        .item-text li {
+            position: absolute;
+        }
+
+        .item1-1 {
+            display: flex;
+            height: 100%;
+            width: 111px;
+            padding: 0 24px;
+            margin: 0px 86% 0px 0px;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0s;
+            transition-delay: .3s;
+        }
+
+        .item1-2 {
+            display: flex;
+            height: 100%;
+            padding: 0 24px;
+            margin: -5px 0 0 -12px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: hsla(0, 0%, 100%, 0);
+            transition: background-color 0s;
+            transition-delay: .3s;
+        }
+
+        .item1-2>a {
+            text-align: center;
+            color: #ffff;
+        }
+
+        .item1-2 li {
+            text-align: center;
+            color: #ffff;
+        }
+
+        .item1-ul2 {
+            width: 111px;
+            height: 100%;
+            /* background-color: rgb(0, 68, 255); */
+        }
+
+        .item1-3 a {
+            padding: 9px 14px;
+            font-size: 16px;
+            color: black;
+            text-decoration: blink;
+        }
+
+        .item1-3 {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-right: 24px;
+        }
+
+        #item2 {
+            width: 100%;
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-position: 100% 56%;
+            padding: 64px 0 0;
+            height: 650px;
+            padding-top: 64.5px;
+            position: relative;
+            background-color: #f0f4ff;
+            overflow: hidden;
+        }
+        .item2-1{
+            width: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            max-width: 1440px;
+            margin: 0px 0 0 238px;
+            overflow: hidden;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadein {
+
+            /* Firefox */
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .item1-2button {
+            cursor: pointer;
+            background: #333;
+            border-radius: 100px;
+            font-size: 11px;
+            padding: 7px 9px 7px 10px;
+            line-height: 13px;
+            letter-spacing: 3.4px;
+            color: #fff;
+            text-align: center;
+            width: 68px;
+        }
+
+        /* ----item2------ */
+
+        #item2 img {
+            display: flex;
+            margin: 33px 0 0 100px;
+            padding: 0 100px 0 0;
+        }
+
+        .item2-2{
+        background-color: #f0f4ff;
+        margin: 20px 0 0 0px;
+        }
+
+        #item2-menu{
+            display: flex;
+            padding: 0;
+            margin: 0px 0 0 134px;
+        }
+
+        /* #item2-menu li {
+            padding: 0px 2.5% 7px 9px;
+        } */
+
+        .item2-menu2{
+            padding: 17px 100px 12px 20px;
+            display: contents;
+            text-align: center;
+        }
+
+        .item2-menu3{
+            text-align: unset;
+            display: contents;
+            padding: 17px 0 0 60px;
+            margin: 0 0 0 0;
+
+        }
+
+        .item2-menu2 li {
+            padding: 0px 0px 10px 55px;
+        }
+
+        .item2-menu3 li {
+            padding: 0px 0px 19px 38px;
+            margin: 0px -25% 10px 25%;
+        }
+        /* ------item3------ */
+        .item3{
+            width: 100%;
+            height: 900px;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item3-1{
+            /* width: 1200px;
+            height: 850px;
+            background-color: gold;
+            display: flex;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0; */
+            width: 1200px;
+            height: 850px;
+            /* background-color: gold; */
+            margin: 0px 0px 0px -1px;
+            justify-content: unset;
+            padding: 0px 0px 0px 1px;
+        }
+
+        .item3-2{
+            width: 500px;
+            height: 714px;
+            margin-top: 7.1%;
+            position: absolute;
+            width: 500px;
+            height: 714px;
+            margin: -23px 0 0 43px;
+            position: absolute;
+        }
+
+        .item3-3{
+            /* width: 500px;
+            height: 714px;
+            background-color: tomato; */
+            /* width: 500px;
+            height: 714px;
+            margin: -14px 0 0 58.3%;
+            background-color: tomato; */
+            width: 608px;
+            height: 729px;
+            margin: -29px 0 0 49.3%;
+        }
+
+        .item3-3-text1{
+            color: #eb217c;
+        }
+
+        .item3-3-a{
+            color: #f03c97;
+            font-weight: bold;
+        }
+        .item3-3-b{
+            margin: 0;
+            padding: 0;
+            height: 30px;
+        }
+        .item3-3-c ul{
+            padding: 0;
+            margin: 0;
+        }
+        .item3-3-c li {
+            list-style: none;
+            position: relative;
+            padding: 0 0 3px 0;
+            margin: 0;
+        }
+        
+        .item3-c-text1{
+            position: absolute;
+            left: 0;
+            width: 100px;
+        }
+
+        .item3-c-text2{
+            margin-left: 100px;
+            width: 400px;
+            padding-bottom: 3px;
+        }
+
+        .item3-c-text3{
+            position: absolute;
+            left: 0;
+            width: 100px;
+            top: 3px;
+        }
+
+        .item3-c-text4{
+            margin-left: 100px;
+            width: 460px;
+            padding-bottom: 3px;
+            color: #222;
+        }
+
+        .item3-c-text5{
+            font-size: 24px;
+        }
+
+        .item3 h2{
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 130%;
+            transform: translateY(80px);
+            transition: all 2s;
+            opacity: 0;
+        }
+        .item3-p1{
+            margin-bottom: 24px;
+            padding: 14px 0 0 0;
+            transition: all 2s;
+        }
+
+        .item3-right{
+            width: 60px;
+            float: right;
+            text-align: right;
+            padding-top: 0px;
+            margin: -86px 0 0 0px;
+        }
+
+        .item3 li ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .item3-span{
+            display: inline-block;
+            background: #ffffff;
+            border-radius: 3px;
+            padding: 0 8px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #555;
+            margin-right: 5px;
+            letter-spacing: -0.04em;
+            font-family: Malgun Gothic,'Segoe WPC', 'Segoe UI', 'Apple SD Gothic Neo', Helvetica, AppleGothic, Sans-serif;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .item3-a{
+
+            font-size: 26px;
+            font-family: "Noto Sans KR",Malgun Gothic,'Segoe WPC', 'Segoe UI', 'Apple SD Gothic Neo', Helvetica, AppleGothic, Sans-serif;
+            color: #222;
+            text-decoration: none;
+            line-height: 1.5;
+            letter-spacing: -0.05em;
+            font-weight: 500;
+        }
+
+        .item3-a2{
+            margin: 13px 0 21px 0;
+            padding: 0px 0 0 0;
+            height: 30px;
+        }
+
+        .item3-hr{
+            color: #dddddd;
+            border-bottom: hidden;
+        }
+
+        .item3-top{
+            width: 108px;
+            height: 134px;
+            position: absolute;
+            left: 168px;
+            margin: 47.9% 0px 0 61px;
+            top: 0px;
+            background-color: skyblue;
+            background-image: url(img/item3-top.jpg);
+        }
+
+        .item3-2-1{
+
+            position: absolute;
+            z-index: 10;
+            opacity: 0;
+            width: 25%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opactiy 1s ease-in-out;
+            -ms-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+        
+        }
+
+        .item3-2-1 a {
+            top: 45%;
+            left: 10px;
+            position: absolute;
+        }
+
+        .item3-2-1 img {
+            width: 19px;
+        }
+
+        .item3-2-2{
+
+            position: absolute;
+            z-index: 10;
+            opacity: 0;
+            width: 25%;
+            height: 100%;
+            top: 0;
+            left: 75%;
+            cursor: pointer;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opactiy 1s ease-in-out;
+            -ms-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+        }
+        .item3-2-2 a{
+            top: 45%;
+            right: 10px;
+            position: absolute;
+        }
+
+        .item3-2-2 img {
+            width: 19px;
+            text-align: left;
+        }
+
+        .item3-a-1{
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            transition: transform 500ms ease-in-out
+        }
+        .item3-a-2{
+            -webkit-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,73px);
+            -moz-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,73px);
+            transform: rotate3d(0,1,0,-180deg) translate3d(0,0,73px);
+            box-shadow: -20px 40px 15px rgb(0 0 0 / 30%);
+            transition: box-shadow 500ms ease-in-out, transform 500ms ease-in-out;
+        }
+        .item3-ul3 default .item3-a-3{
+            opacity: 1;
+            transition-delay: 90ms;
+        }
+
+        .item3-a-3{
+            width: 73px;
+            left: -37px;
+            height: 732px;
+            -webkit-transform: rotate3d(0,1,0,-90deg) translate3d(-34px,0,0);
+            -moz-transform: rotate3d(0,1,0,-90deg) translate3d(-34px,0,0);
+            transform: rotateY(-90deg) translate3d(-34px,0,0);
+        }
+
+        /* ---item3 슬라이드---- */
+        .item3-slide{
+            -webkit-flex-shrink: 0;
+            -ms-flex: 0 0 auto;
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .item3-slide2{
+            height: auto;
+        }
+        
+
+        .item3-ul2{
+            list-style: none;
+            position: relative;
+        }
+
+        #item3-ul2 li {
+            -webkit-perspective: 1800px;
+            -moz-perspective: 1800px;
+            perspective: 1800px;
+            position: relative;
+            width: 100%;
+            float: left;
+            z-index: 1;
+        }
+
+        .item3-slide .item3-slide li .div {
+            display: block;
+            position: absolute;
+        }
+
+
+        /* ---------하단----------- */
+        footer {
+            width: 100%;
+            height: 300px;
+        }
+
+        footer .footer_head {
+            width: 1250px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer .footer_head span {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        footer .footer_head img {
+            width: 24px;
+        }
+
+        footer .footer_info {
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+
+
+        footer .footer_info ul {
+            display: flex;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 10px;
+        }
+
+        footer .footer_info ul li {
+            color: #a5a5a5;
+            margin-right: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        footer .footer_service {
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+        footer .footer_service ul {
+            display: flex;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        footer .footer_service ul li {
+            margin-right: 12px;
+        }
+
+        footer .footer_service ul li a {
+            color: #6f6f6f;
+            letter-spacing: -0.5px;
+        }
+
+        footer .footer_service p {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 10px;
+            color: #6f6f6f;
+            letter-spacing: -0.5px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="item1">
+        <div class="item1-1">
+            <img src="img/item1.png" height="28" alt="">
+        </div>
+
+        <div class="item1-2">
+
+            <button class="item1-2button">로그인</button>
+
+        </div>
+    </div>
+
+    <div id="item2-menu">
+        <ul class="item2-menu2">
+            <li><a href="#"><img src="img/item2menu1.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu2.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu3.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu4.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu5.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu6.gif" alt=""><img src="img/item2menu7.gif" alt=""></a></li>
+            <li></li>
+        </ul>
+
+        <ul class="item2-menu3">
+            <li><a href="#"><img src="img/item2menu8.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu9.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/item2menu10.gif" alt=""></a></li>
+        </ul>
+
+    </div>
+
+    <section id="item2">
+
+        <div class="item2-1">
+
+            <div class="item2-2">
+                <img src="img/item2-1.png" height="100" alt="">
+                <img src="img/item2-2.png" height="45" alt="">
+            </div>
+
+            <div class="item2 img">
+                <img src="img/item2.png" height="400" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="item3">
+        <div class="item3-top">
+
+        </div>
+        <div class="item3-1">
+            <ul class="item3-ul">
+                <li>
+                    <div>
+                        <span class="item3-span">무료배송</span>
+                        <span class="item3-span">소득공제</span>
+                    </div>
+                </li>
+    
+                <li>
+                    <a href="#" class="item3-a">어서 오세요, 휴남동 서점입니다 (여름 에디션)<img src="img/itme3-a-icon.png" height="18"></a>
+                    <a href="" class="item3-b"></a>
+                </li>
+    
+                <li>
+                    <p class="item3-p1">황보름 (지은이) 클레이하우스 2022-01-17</p>
+                </li>
+
+                <div class="item3-a2">
+                    <hr class="item3-hr">
+                </div>
+
+                <div class="item3-right">
+                    <a href="#" onclick="showSnsLayer()"><img src="img/item3 right.png" alt="" /></a>
+                </div>
+            </ul>
+
+            <div class="item3-2">
+                
+                <div class="item3-slide">
+                    <ul id="item3-ul2" class="item3-ul2">
+                        <li>
+                            <div class="item3-ul3 default">
+                                <div class="item3-a-1"><img src="img/item3-2-img.jpg" alt=""></div>
+                                <div class="item3-a-2"><img src="img/item3-3-img.jpg" alt=""></div>
+                                <div class="item3-a-3"><img src="img/item3-4-img.jpg" alt=""></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="item3-2-1">
+                    <a href="#" class=""><img src="img/itme3-2-1.png" alt=""></a>
+                </div>
+                
+                <div class="item3-2-2">
+                    <a href="#" class=""><img src="img/item2-2.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="item3-3">
+                <div>
+                    <span class="item3-3-a">
+                        <a href="#" class="item3-3-text1">타이벡 보냉백(이벤트 도서 포함, 국내도서 4만원 이상)</a>
+                    </span>
+                    <div class="item3-3-b"></div>
+                </div>
+
+                <div class="item3-3-c">
+                    <ul>
+                        <li>
+                            <div class="item3-c-text1">정가</div>
+                            <div class="item3-c-text2">15,000원</div>
+                        </li>
+                        <li>
+                            <div class="item3-c-text3">판매가</div>
+                            <div class="item3-c-text4">
+                                <span class="item3-c-text5">13,500</span>원 (10%, 1,500원 할인)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+
+
+    <footer>
+        <div class="footer_head">
+            <span>(주) 밀리의 서재</span>
+            <div class="sns">
+                <img src="img/foorem1.png" alt="">
+                <img src="img/foorem2.png" alt="">
+                <img src="img/foorem3.png" alt="">
+                <img src="img/foorem4.png" alt="">
+                <img src="img/foorem5.png" alt="">
+            </div>
+        </div>
+        <div class="footer_info">
+            <button type="button">사업자 정보 닫기</button>
+            <ul>
+                <li>대표이사 : 서영택</li>
+                <li>사업자등록번호 : 423-88-00370</li>
+                <li>호스팅 제공자 : (주)밀리의 서재</li>
+            </ul>
+            <ul style="margin-bottom: 10px;">
+                <li>통신판매업 신고번호 : 2016-서울마포-2012호</li>
+                <li>주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</li>
+            </ul>
+            <ul style="margin-bottom: 20px;">
+                <li>고객정보보호 책임자 : 김주영(jay@millie.town)</li>
+                <li>마케팅 제휴 문의 : business@millie.town</li>
+            </ul>
+        </div>
+        <div class="footer_service">
+            <ul>
+                <li><a href="#">이용약관 ></a></li>
+                <li><a href="#"><b>개인정보처리방침 ></b></a></li>
+                <li><a href="#">청소년보호정책 ></a></li>
+                <li><a href="#">고객센터 ></a></li>
+                <li><a href="#">B2B 문의 ></a></li>
+                <li><a href="#">콘텐츠 제휴문의 ></a></li>
+                <li><a href="#">뷰어 다운로드 ></a></li>
+                <li><a href="#">회사 소개 ></a></li>
+            </ul>
+            <p>Copyright © 2022 밀리의 서재 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bb.js"></script>
+
+</body>
+
+</body>
+
+<script>
+    var scroll_category = $('#item5').offset().top;
+    if (ws > scroll_category - 700) {
+        $('#item5 h2, #item5 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_category = $('#item5').offset().top;
+    if (ws > scroll_category - 700) {
+        $('#item5 h2, #item5 p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+</script>
+
+</html>
