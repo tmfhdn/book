@@ -1,5 +1,3 @@
-
-
 .item3-ul2 {
 	
 	list-style: none;
@@ -1083,9 +1081,13 @@
         }
 
         .item3-7-a1{ display:flex; }
+        
+        .item3-7-a2{ background-color: #0fa8ff;}
 
         .item3-7-a1 button {
             background-color: #b9d9eb;
+            width: 95px;
+            height: 40px;
         }
 
         .Ere_btn_cart {
@@ -1140,6 +1142,7 @@
             line-height: 1.5;
             display: block;
             white-space: nowrap;
+            width: 189px;
             background: #83c1e5;
             margin: 0;
             padding: 17px 48px 17px 45px;
@@ -1151,6 +1154,7 @@
             margin-top: -135px;
         }
 
+        .item3-8-0 { width: auto;}
         /* -------item4----------------- */
 
         .item4{
