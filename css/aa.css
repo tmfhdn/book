@@ -1,4 +1,38 @@
-    * {
+#item4-3 {
+    width: 1000px;
+    height: 500px;
+    background: #eee;
+    float: left;
+    margin: 50px 0 0 50px;
+    color: #666
+}
+.item4-4 {
+    width: 1000px;
+    height: 500px;
+    background: #eee;
+    float: left;
+    margin: 50px 0 0 50px;
+    color: #666
+}
+.item4-5 {
+    width: 1000px;
+    height: 500px;
+    background: #eee;
+    float: left;
+    margin: 50px 0 0 50px;
+    color: #666
+}
+.item4-6 {
+    width: 1000px;
+    height: 500px;
+    background: #eee;
+    float: left;
+    margin: 50px 0 0 50px;
+    color: #666
+}
+
+
+* {
         margin: 0;
         padding: 0;
         box-sizing: border-box;

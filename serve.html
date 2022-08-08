@@ -492,19 +492,29 @@
 
         <div id="item4-3">
             <div class="item4-3-1">책소개</div>
-            <p>서울 어디에나 있을 것 같은 동네의 후미진 골목길. 오가는 사람도 많지 않은 가정집들 사이에 평범한 동네 서점 하나가 들어선다. 바로 휴남동 서점. 슬픈 사연을 갖고 있는 사람처럼 얼굴에 아무런 의욕도 보이지 않는
+                <script>
+
+                    $(function () {
+                        $.get("./sub_txt/item4-3.txt", function (data) {
+                            $("#item4-3.item4-3-1").html(data);
+                        })
+
+                    });
+
+                </script>
+            <!-- <p>서울 어디에나 있을 것 같은 동네의 후미진 골목길. 오가는 사람도 많지 않은 가정집들 사이에 평범한 동네 서점 하나가 들어선다. 바로 휴남동 서점. 슬픈 사연을 갖고 있는 사람처럼 얼굴에 아무런 의욕도 보이지 않는
             서점 주인 영주는 처음 몇 달간은 자신이 손님인 듯 일은 하지 않고 가만히 앉아 책만 읽는다.<br>
             
             그렇게 잃어버린 것들을 하나둘 되찾는 기분으로 하루하루를 보내다 보니 소진되고 텅 빈 것만 같았던 내면의 느낌이 서서히 사라진다. 그러다 어느 순간 깨닫는다. 자신이 꽤 건강해졌다는 사실을. 그 순간부터 휴남동
             서점은 완전히 새로운 공간이 된다. 사람이 모이고 감정이 모이고 저마다의 이야기가 모이는 공간으로.<br>
             
             크고 작은 상처와 희망을 가진 사람들이 휴남동 서점이라는 공간을 안식처로 삼아 함께 살아가는 법을 배운다. 배려와 친절, 거리를 지킬 줄 아는 사람들끼리의 우정과 느슨한 연대, 진솔하고 깊이 있는 대화 등 우리가
-            잃어버린 채 살고 있지만 사는 데 꼭 필요한 것들이 가득한 책이다. 출간 즉시 전자책 TOP 10 베스트셀러에 오르며 수많은 독자의 찬사를 받은 소설이 독자들의 강력한 요청으로 마침내 종이책으로 다시 태어났다.</p>
+            잃어버린 채 살고 있지만 사는 데 꼭 필요한 것들이 가득한 책이다. 출간 즉시 전자책 TOP 10 베스트셀러에 오르며 수많은 독자의 찬사를 받은 소설이 독자들의 강력한 요청으로 마침내 종이책으로 다시 태어났다.</p> -->
         </div>
 
         <div class="item4-4">
             <div class="item4-4-1">목차</div>
-            <p>서점은 어떤 모습이어야 할까?<br>
+            <!-- <p>서점은 어떤 모습이어야 할까?<br>
             이제 더는 울지 않아도 된다<br>
             오늘 커피는 무슨 맛이에요?<br>
             떠나온 사람들의 이야기<br>
@@ -546,10 +556,20 @@
             무엇이 서점을 살아남게 하는가?<br>
             <br>
             
-            작가의 말</p>
+            작가의 말</p> -->
+                <script>
+
+                    $(function () {
+                        $.get("./sub_txt/item4-4.txt", function (data) {
+                            $(".item4-4").html(data);
+                        })
+
+                    });
+
+                </script>
         </div>
         <div class="item4-5">
-            <div class="item4-5-1">책속에서</div>
+            <!-- <div class="item4-5-1">책속에서</div>
             <p>P. 133b<br>
             누군가를 실망시키지 않기 위해 사는 삶보단 내가 살고 싶은 삶을사는 게 더 맞지 않을까. - Con<br>
             P. 176<br>
@@ -564,14 +584,34 @@
             나에게 도움을 주고 있다는 생각을 해요. 제가하는 거의 모든 선택의 근거엔 제가 지금껏 읽은 책이 있는 거예요.더보기 - 딸기나<br>
             서점이 없는 마을은 마을이 아<br>
             스스로 마을이라 부를 수는 있겠지만영혼까지 속일 수는 없다는 것을 자신도 알 것이다.<br>
-            - 닐 게이먼(소설가) - ashram21</p>
+            - 닐 게이먼(소설가) - ashram21</p> -->
+                <script>
+
+                    $(function () {
+                        $.get("./sub_txt/item4-5.txt", function (data) {
+                            $(".item4-5").html(data);
+                        })
+
+                    });
+
+                </script>
         </div>
         <div class="item4-6">
-            <div class="item4-6-1">저자 및 역자소개</div>
+            <!-- <div class="item4-6-1">저자 및 역자소개</div>
             <p>황보름 (지은이) <br>
             대학에서 컴퓨터공학을 전공하고 LG전자에서 소프트웨어 개발자로 일했다. 몇 번의 입사와 퇴사를 반복하면서도 매일 읽고 쓰는 사람으로서의 정체성은 잃지 않고 있다. 지은 책으로 『매일 읽겠습니다』, 『난생처음 <br>
             킥복싱』, 『이 정도 거리가 딱 좋다』가 있다. <br>
-            최근작 : <어서 오세요, 휴남동 서점입니다 (여름 에디션)>,<매일 읽겠습니다 (에세이 에디션)>,<이 정도 거리가 딱 좋다> … <a href="#">총 12종 (모두보기)</a>  <br></p>
+            최근작 : <어서 오세요, 휴남동 서점입니다 (여름 에디션)>,<매일 읽겠습니다 (에세이 에디션)>,<이 정도 거리가 딱 좋다> … <a href="#">총 12종 (모두보기)</a>  <br></p> -->
+            <script>
+
+                $(function () {
+                    $.get("./sub_txt/item4-6.txt", function (data) {
+                        $(".item4-6").html(data);
+                    })
+
+                });
+
+            </script>
         </div>
 
         <div class="item4-7"><hr>
@@ -770,20 +810,53 @@
             clockline.to(".item3-4-4", 1, { strokeDashoffset: "150" })
             .to(".item3-4-4", 2.5, { strokeDashoffset: "-=150", strokeWidth: 10, strokeMiterlimit: 10, stroke: "#ffaf25" })
             .to(".item3-4-4", 0.4, { opacity: 0, delay: 2 })
-    
 
+
+    </script>
+
+    <script>
 
         $(function () {
-            $.get("./sub_txt/1.txt", function (data) {
-                $("#item4-3").html(data);
+            $.get("./sub_txt/item4-3.txt", function (data) {
+                $("#item4-3.item4-3-1").html(data);
             })
 
         });
-    
-    
-    
+
     </script>
 
+    <script>
+
+        $(function () {
+            $.get("./sub_txt/item4-4.txt", function (data) {
+                $(".item4-4").html(data);
+            })
+
+        });
+
+    </script>
+
+    <script>
+
+        $(function () {
+            $.get("./sub_txt/item4-5.txt", function (data) {
+                $(".item4-5").html(data);
+            })
+
+        });
+
+    </script>
+    
+    <script>
+
+        $(function () {
+            $.get("./sub_txt/item4-6.txt", function (data) {
+                $(".item4-6").html(data);
+            })
+
+        });
+
+    </script>
 </body>
     
 </html>
