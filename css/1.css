@@ -1080,14 +1080,25 @@
             padding: 0 0 0 0;
         }
 
-        .item3-7-a1{ display:flex; }
+        .item3-7-a1{ 
+            display: flex;
+            padding: 0px 0px 0 0px;
+            justify-content: space-around;
+            margin: 0 188px 0 -6px;
+        }
         
         .item3-7-a2{ background-color: #0fa8ff;}
 
         .item3-7-a1 button {
             background-color: #b9d9eb;
-            width: 95px;
-            height: 40px;
+            position: relative;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
         }
 
         .Ere_btn_cart {
@@ -1131,11 +1142,11 @@
             cursor: pointer;
             background: #e24457;
         }
+
         .Ere_btn_buyitnow a:link {
-            white-space: nowrap;
-            text-decoration: none;
+        
             outline: 0;
-            color: #FFF;
+            color: #080808;
             font-size: 15px;
             font-weight: bold;
             font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
@@ -1144,9 +1155,11 @@
             white-space: nowrap;
             width: 189px;
             background: #83c1e5;
-            margin: 0;
+            margin: 14px 0px 0px 0px;
             padding: 17px 48px 17px 45px;
+            border-radius: 10px;
         }
+
         #btn_present_v1, #btn_present {
             margin-bottom: 3px;
         }
@@ -1158,9 +1171,9 @@
         /* -------item4----------------- */
 
         .item4{
-          margin: 100px 0 0 0;
+            margin: 100px 0 0 0;
             width: 100%;
-            height: 9229px;
+            height: 8229px;
             justify-content: space-around;
             display: flex;
             /* background-color: red; */
@@ -1230,57 +1243,55 @@
         .item4-3-1{font-size: 25px; margin: -6px 0 0 -188px;}
 
         .item4-4{
-            width: 820px;
-            height: 1005px;
-            /* background-color: green; */
-            float: left;
-            margin: 57% 0px 0px 0%;
-            padding: 0px 0px 0px;
-            font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
-            color: rgb(51, 51, 51);
-            font-size: 15px;
-            line-height: 1.8;
-            letter-spacing: -0.02em;
-            text-align: left;
-            position: absolute;
+        width: 820px;
+        height: 1005px;
+        margin: 21% 0px 0px 0%;
+        padding: 0px 0px 0px;
+        font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: -0.02em;
+        text-align: left;
+        position: absolute;
         }
-        .item4-4-1{font-size:25px; margin: -6px 0 0 -188px;}
+        /* .item4-4-1{font-size:25px; margin: -6px 0 0 -188px;} */
         .item4-5{
-            width: 810px;
-            height: 220px;
-            /* background-color: rgb(2, 248, 236); */
-            float: left;
-            margin: 129% 0px 0px 0%;
-            padding: 82px 0px 0px;
-            font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
-            color: rgb(51, 51, 51);
-            font-size: 15px;
-            line-height: 1.8;
-            letter-spacing: -0.02em;
-            text-align: left;
-            position: absolute;
+         width: 810px;
+        height: 220px;
+        float: left;
+        margin: 67% 0px 0px 0%;
+        padding: 15px 0px 0px;
+        font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: -0.02em;
+        text-align: left;
+        position: absolute;
         }
         .item4-5-1{font-size:25px; margin: -6px 0 0 -188px;}
 
         .item4-6{
-            width: 810px;
-            height: 220px;
-            /* background-color: rgb(153, 5, 238); */
-            float: left;
-            margin: 172% 0px 0px 0%;
-            padding: 82px 0px 0px;
-            font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
-            color: rgb(51, 51, 51);
-            font-size: 15px;
-            line-height: 1.8;
-            letter-spacing: -0.02em;
-            text-align: left;
-            position: absolute;
+        width: 810px;
+        height: 220px;
+        float: left;
+        margin: 85% 0px 0px -1%;
+        padding: 82px 0px 0px;
+        font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: -0.02em;
+        text-align: left;
+        position: absolute;
         }
+        
         .item4-6-1{font-size:25px; margin: -6px 0 0 -241px;}
+
         .item4-7{
             float: left;
-            margin: 191% 0px 0px -6%;
+            margin: 143% 0px 0px -8%;
             padding: 83px 0px 1px 0px;
             font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
             color: rgb(51, 51, 51);

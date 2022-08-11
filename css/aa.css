@@ -70,6 +70,10 @@
         top: 10px;
     }
 
+    .btn_on {
+        background-color: #242424 !important;
+        color: #fff;
+    }
     .item-text:hover {
         position: absolute;
     }
